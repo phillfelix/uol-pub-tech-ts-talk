@@ -8,4 +8,5 @@
     "strict": true,                           /* Enable all strict type-checking options. */
     "esModuleInterop": true,
   },
+  "exclude": ["tests/**/*"],
 }

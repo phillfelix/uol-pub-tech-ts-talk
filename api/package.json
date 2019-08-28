@@ -7,7 +7,7 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist",
-    "dev:watch": "tsc -w & nodemon dist",
+    "dev:watch": "tsc -w & nodemon dist --inspect",
     "dev": "nodemon dist",
     "test": "jest"
   },
