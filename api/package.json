@@ -7,8 +7,8 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist",
-    "dev:watch": "tsc -w & nodemon dist --inspect",
-    "dev": "nodemon dist",
+    "dev:watch": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+    "dev": "nodemon",
     "test": "jest"
   },
   "author": "",
@@ -25,5 +25,18 @@
   "dependencies": {
     "@types/jest": "^24.0.18",
     "source-map-support": "^0.5.13"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src/**/*"
+    ],
+    "exec": "npm run dev:watch",
+    "ext": "ts"
   }
 }
