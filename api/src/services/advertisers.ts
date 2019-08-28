@@ -1,4 +1,4 @@
-import Advertiser from '../core/models/Advertiser';
+import Advertiser from '@/core/models/Advertiser';
 
 class AdvertisersService {
   private static advertisers:Advertiser[] = [
