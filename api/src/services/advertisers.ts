@@ -1,6 +1,6 @@
 import Advertiser from '../core/models/Advertiser';
 
-class AdvertiserService {
+class AdvertisersService {
   private static advertisers:Advertiser[] = [
     { name: 'PagSeguro', id: 1 },
     { name: 'UOL Ads', id: 2 },
@@ -12,4 +12,4 @@ class AdvertiserService {
   }
 }
 
-export default AdvertiserService;
+export default AdvertisersService;
